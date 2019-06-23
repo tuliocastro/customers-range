@@ -27,7 +27,7 @@ First we need to pack the project:
 
 ### 1 - Bash mode
 
-In order to run the algorithm in a batch mode, execute the following in a terminal:
+In order to run the algorithm in a batch mode, execute the following:
 
     java -jar server/target/intercom-customer-finder.jar customers_example.txt
 
@@ -37,7 +37,7 @@ Passing a string with path file as argument you will receive the ouput of custom
 
     java -jar server/target/intercom-customer-finder.jar
 
-Using this command wihout any argument, will start a server which will be running in `http://localhost:4567/` and the endpoint `/customer` available:
+Using this command without any argument, will start a server which will be running in `http://localhost:4567/` and the endpoint `/customer` available:
 * [POST] /customer: Add a file as parameter to consume this endpoint and receive the list of customers in 100km
 
 ### 3 - Client
