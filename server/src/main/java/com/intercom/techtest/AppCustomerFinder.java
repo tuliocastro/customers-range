@@ -19,7 +19,12 @@ public class AppCustomerFinder {
         try {
 
             if (args.length == 0 || !new File(args[0]).exists()) {
-                throw new FileNotFoundException("Please provide a valid file");
+
+                System.out.println("Starting in Server mode");
+                
+                Server.main(null);
+
+                return;
             }
 
             File file = new File(args[0]);
