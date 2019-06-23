@@ -1,0 +1,48 @@
+@import "styles/colors";
+
+.CustomerFormFile {
+  border-radius: 4px;
+  padding: 15px 20px;
+  background: $bgPrimary;
+  color: $fgPrimary;
+  display: flex;
+  flex-flow: row;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  transition: transform, top 0.3s ease-out;
+
+  input[type="file"] {
+    display: none;
+  }
+
+  label {
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+  button {
+    margin-left: auto;
+  }
+
+  &:hover {
+    background: darken($bgPrimary, 5%);
+    box-shadow: 0 0 5px rgba(#000, 0.2);
+
+    label {
+      font-weight: 500;
+    }
+  }
+
+  &.has-file {
+    top: 40px;
+  }
+
+}

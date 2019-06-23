@@ -1,0 +1,49 @@
+@import "styles/colors";
+
+.CustomerList {
+  margin-top: 50px;
+}
+
+.customer {
+  padding: 5px 10px;
+  display: flex;
+  flex-flow: row;
+  font-size: 15px;
+  height: 35px;
+  line-height: 35px;
+  position: relative;
+
+  .id {
+    margin-right: 5px;
+    font-size: 12px;
+    font-style: italic;
+    color: #333;
+  }
+
+  .name {
+    color: #333;
+    width: 70%;
+    font-weight: bold;
+  }
+
+  .distance {
+    color: #888;
+    font-weight: 200;
+    margin-left: auto;
+  }
+
+  .distance-bar {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #ddd;
+
+    .distance-bar-value {
+      height: 100%;
+      background-color: $bgPrimary;
+    }
+  }
+}
