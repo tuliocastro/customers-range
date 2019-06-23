@@ -6,9 +6,7 @@ This solution reads the full list of customers and output the names and user ids
 
 ## System design
 
-After reading the techtest my first I've developed the simple batch flow using jar file to read a file and parse to an ouput.
-
-Then I've created a small example of a web consuming an API endpoint using the same code to return the customers in range of 100km.
+After reading the techtest I saw an opportunity to do a small functional example so I've developed the simple batch flow using jar file to read a file and parse to an ouput and a small web client consuming an API endpoint using the same code to return the customers in range of 100km.
 
 <img align="center" src="readme_files/organization.png" height="300" alt="System Design Img"/>
 
@@ -39,7 +37,7 @@ Passing a string with path file as argument you will receive the ouput of custom
 
     java -jar server/target/intercom-customer-finder.jar
 
-Then a server will be running in `http://localhost:4567/` and the endpoint `/customer` created:
+Using this command wihout any argument, will start a server which will be running in `http://localhost:4567/` and the endpoint `/customer` available:
 * [POST] /customer: Add a file as parameter to consume this endpoint and receive the list of customers in 100km
 
 ### 3 - Client
