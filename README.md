@@ -1,4 +1,8 @@
-# Intercom
+# Intercom - Customers Find
+
+This solution reads the full list of customers and output the names and user ids of matching customers (within 100km), sorted by User ID (ascending).
+
+<img align="center" src="readme_files/devices.png" height="300" alt="Devices"/>
 
 ## System design
 
