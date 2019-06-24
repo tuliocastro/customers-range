@@ -17,7 +17,7 @@ After reading the techtest I saw an opportunity to do a small functional example
 
 ## How to run
 
-First we need to pack the project:
+First we need to build the project, this commando will pack and test the project:
 
     //Unix
     cd server/ && ./mvnw clean package
